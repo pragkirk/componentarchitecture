@@ -1,0 +1,29 @@
+apply plugin: 'java'
+
+sourceCompatibility = 1.8
+ 
+repositories {
+    flatDir {
+        dirs '../../repo'
+    }
+}
+
+dependencies {
+	compile ':operation:1.0'
+}
+
+version = 1.0
+jar {
+	manifest {
+        attributes 'Implementation-Title': 'Operation',
+                   'Implementation-Version': version
+    }
+}
+
+uploadArchives {
+    repositories {
+       flatDir {
+           dirs '../../repo'
+       }
+    }
+}

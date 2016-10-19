@@ -1,0 +1,1 @@
+java -cp repo/calc-1.0.jar:repo/operation-1.0.jar:repo/math-1.0.jar:repo/loan-1.0.jar com.extensiblejava.calculator.textui.CalculatorTextUI
