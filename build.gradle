@@ -1,38 +1,9 @@
-buildscript {
-	
-	dependencies {
-		classpath 'com.github.jengelman.gradle.plugins:shadow:1.2.3'
-	}
+task buildall(type: GradleBuild) {
+	buildFile='src/operation/build.gradle'
+	tasks=['uploadArchives']
 }
 
-plugins {
-	    id 'java'
-    	id 'application'
-	    id 'com.github.johnrengelman.shadow' version '1.2.3'
-	}
- 
-sourceCompatibility = 1.8
-
-mainClassName = "com.extensiblejava.calculator.textui.CalculatorTextUI"
- 
-repositories {
-    flatDir {
-        dirs './repo'
-    }
-}
-
-dependencies {
-	runtime ':operation:1.0', ':math:1.0', ':loan:1.0', ':calc:1.0'
-}
-
-version = 1.0
-jar {
-	manifest {
-        attributes 'Implementation-Title': 'Operation',
-                   'Implementation-Version': version
-    }
-}
-
-shadowJar {
-    archiveName='calculator.jar'
+task cleanall(type: GradleBuild) {
+	buildFile='src/operation/build.gradle'
+	tasks=['clean']
 }
