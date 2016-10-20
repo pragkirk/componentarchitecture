@@ -4,5 +4,7 @@ A demonstration of architectural agility
 Instructions coming soon.
 
 Requirements:
-  Java 1.8 ++
-  Gradle
+- Java 1.8 ++
+- Gradle for builds
+- GraphViz for visualization
+  
