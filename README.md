@@ -1,10 +1,15 @@
 # From Fragile to Agile Architecture
 A demonstration of architectural agility
 
-Instructions coming soon.
+The following information explains how the simple sample application demonstrates several of the practices of
+agile architecture. As the example evolves, so will the explanations.
 
-Requirements:
-- Java 1.8 ++
-- Gradle for builds
-- GraphViz for visualization
-  
+## Prove It With Code
+## Architect All the Way Down
+## Generate Documentation
+## Validate and Enforce the Architecture
+## Refactor Mercilessly
+## Keep It As Simple As Possible
+
+Requirements: - Java 1.8 ++ - Gradle for builds - GraphViz for visualization
+
